@@ -23,6 +23,7 @@
         <module>eureka-one</module>
         <module>eureka-two</module>
         <module>config</module>
+        <module>zuul</module>
     </modules>
 
     <properties>

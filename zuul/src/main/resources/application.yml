@@ -1,0 +1,27 @@
+server:
+  port: 4001
+spring:
+  application:
+    name: zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://yangwanhao:eureka@localhost:1001/eureka/,http://yangwanhao:eureka@localhost:2001/eureka/
+    # eureka client间隔多久去拉取服务注册信息
+    registry-fetch-interval-seconds: 5
+zuul:
+  routes:
+hystrix:
+  command:
+    default:
+      execution:
+        isoltion:
+          thread:
+            timeoutInMilliseconds: 5000
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 3500
+  MaxAutoRetries: 3
+  MaxAutoRetriesNextServer: 3
+  # 是否对所有操作重试
+  OkToRetryOnAllOperations: true
