@@ -24,6 +24,8 @@
         <module>eureka-two</module>
         <module>config</module>
         <module>zuul</module>
+        <module>feign</module>
+        <module>controller</module>
     </modules>
 
     <properties>
@@ -54,6 +56,12 @@
                 <version>${spring.cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <!-- pageHelper -->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
