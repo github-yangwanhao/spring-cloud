@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>feign-service1</artifactId>
-
+    <version>${parent.version}</version>
+    <packaging>jar</packaging>
 
 </project>
