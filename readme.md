@@ -58,3 +58,10 @@
 ### 端口分配
 - eureka-one  : 1001
 - eureka-two  : 2001
+- config  : 3001
+- zuul  : 4001
+- controller-service1  : 5001
+- controller-service2  : 6001
+
+TODO:
+1、Eureka加密后,高可用无法使用
