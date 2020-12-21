@@ -4,10 +4,8 @@ spring:
   application:
     name: controller-service2
 eureka:
-  username: yangwanhao
-  password: eureka
   client:
     service-url:
-      defaultZone: http://${eureka.username}:${eureka.password}@localhost:1001/eureka/,http://${eureka.username}:${eureka.password}@localhost:2001/eureka/
+      defaultZone: http://yangwanhao:eureka@eureka1:1001/eureka/,http://yangwanhao:eureka@eureka2:2001/eureka/
     # eureka client间隔多久去拉取服务注册信息
     registry-fetch-interval-seconds: 5

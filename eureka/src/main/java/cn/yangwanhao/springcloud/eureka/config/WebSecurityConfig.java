@@ -1,4 +1,4 @@
-package cn.yangwanhao.springcloud.eureka.two.config;
+package cn.yangwanhao.springcloud.eureka.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -10,7 +10,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
  *
  * @author 杨万浩
  * @version V1.0.0
- * @since 2020/6/20 11:04
+ * @since 2020/6/20 10:35
  */
 @EnableWebSecurity
 @Configuration

@@ -1,18 +1,18 @@
 server:
-  port: 2001
+  port: 1001
 spring:
   application:
-    name: eureka-two
+    name: eureka
   security:
     user:
       name: yangwanhao
       password: eureka
 eureka:
   instance:
-    hostname: localhost
+    hostname: eureka1
   client:
     serviceUrl:
-      defaultZone: http://yangwanhao:eureka@localhost:1001/eureka/
+      defaultZone: http://yangwanhao:eureka@eureka2:2001/eureka/
     # 禁止自己注册自己
     # register-with-eureka: false
     # fetch-registry: false

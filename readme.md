@@ -9,9 +9,7 @@
 ```
 ├─spring-cloud----------------------------父项目，公共依赖
 │  │
-│  ├─eureka-one--------------------微服务注册中心1──┤
-│  │                                               ├─两个eureka服务模仿高可用注册中心(两个方便启动,实际上一个就够了)
-│  ├─eureka-two--------------------微服务注册中心2──┤
+│  ├─eureka--------------------微服务注册中心
 │  │
 │  ├─save-config-----------------------微服务配置中心
 │  │
@@ -56,12 +54,8 @@
 │  │  └─save-security-feign------------------基于auth2的feign配置
 
 ### 端口分配
-- eureka-one  : 1001
-- eureka-two  : 2001
+- eureka  : 1001, 2001
 - config  : 3001
 - zuul  : 4001
 - controller-service1  : 5001
 - controller-service2  : 6001
-
-TODO:
-1、Eureka加密后,高可用无法使用

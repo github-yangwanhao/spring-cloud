@@ -8,5 +8,10 @@ spring:
       server:
         git:
           uri: https://github.com/github-yangwanhao/spring-cloud-config.git
-          username: yangwanhao163@163.com
+          username: 'yangwanhao163@163.com'
           password: xujuan199689
+          search-paths: /*
+          default-label: master
+          basedir: /data/config/config-repo
+          # 强制更新
+          force-pull: true
