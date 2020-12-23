@@ -28,10 +28,10 @@
             <artifactId>spring-cloud-starter-hystrix</artifactId>
             <version>1.4.7.RELEASE</version>
         </dependency>
-
         <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <groupId>cn.yangwanhao</groupId>
+            <artifactId>base</artifactId>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 
